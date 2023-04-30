@@ -5,11 +5,12 @@
 </template>
 
 <script>
+
 import Header from "@/components/Header.vue";
-export default {
+export default  {
   name: 'TheHome',
   components: {
     Header,
-  }
+  },
 }
 </script>
