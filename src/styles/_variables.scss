@@ -5,7 +5,9 @@ $c300: #F5C473;
 $c400: #F8F9FA;
 $c500: #3772E1;
 $c600: #81C4FF;
+$c700: #464A4E;
 $default: #fff;
+
 
 
 // TextBlock Style
@@ -46,13 +48,13 @@ $default: #fff;
 
 //  Fonts
 
-$font:'Sofia Sans Condensed', sans-serif;
+$font: 'Inter', sans-serif;
 
 //  Weights
 $font-r: 400;
 $font-m: 500;
-$font-sb: 600;
 $font-b: 700;
+$font-eb: 800;
 
 //
 //  Breakpoints
@@ -66,11 +68,11 @@ $mobile__small: 640px;
 $mobile-768: 768px;
 $tablet__small: 848px;
 $tablet__basic: 1025px;
-$desktop__small: 1110px;
+$desktop__small: 1140px;
 $desktop__wxga-display: 1366px;
 $desktop__basic: 1440px;
 
-//
+
 // Hover
 %dtrans {
   transition: all 0.5s ease;
