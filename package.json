@@ -10,7 +10,9 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.13",
     "@heroicons/vue": "^2.0.17",
+    "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/font": "5.9.55",
+    "@pictogrammers/memory": "^1.1.0",
     "aos": "^2.3.4",
     "core-js": "^3.8.3",
     "register-service-worker": "^1.7.2",
@@ -34,7 +36,6 @@
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
     "tailwindcss": "^3.3.2"
-
   },
   "eslintConfig": {
     "root": true,

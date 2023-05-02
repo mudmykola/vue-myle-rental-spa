@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation bg-c100 h-16 flex items-center rounded-8">
+  <div class="navigation bg-c100 h-16 flex items-center justify-between rounded-8">
     <div class="navigation-left__box flex items-center">
       <div class="navigation-logo flex items-center pl-4 pr-4">
         <a :href="logo.logoLink">
@@ -17,18 +17,21 @@
         </ul>
       </nav>
     </div>
-    <div class="navigation-right__box">
-
+    <div class="navigation-right__box flex items-center h-8 relative">
+      <Search />
     </div>
-
   </div>
 </template>
 
 <script>
 import Logo from '@/assets/image/logo.svg'
+import Search from "@/components/UI/Search.vue";
 
 export default {
   name: "TheNavigation",
+  components: {
+    Search,
+  },
   data() {
     return {
       logo: {
@@ -64,8 +67,6 @@ export default {
           url: '/',
         },
       ],
-
-
     }
   },
 }
@@ -73,10 +74,8 @@ export default {
 
 <style lang="scss">
 @use "src/styles/variables" as var;
-
 .navigation {
   position: relative;
-
   &-logo {
     &:before {
       position: absolute;
@@ -86,11 +85,9 @@ export default {
       left: 8%;
     }
   }
-
   &-menu {
     a {
       position: relative;
-
       &:after {
         position: absolute;
         content: '';
@@ -110,5 +107,14 @@ export default {
       }
     }
   }
+&-right__box{
+  &:after{
+    position: absolute;
+    content: '';
+    border: 1px solid var.$c700;
+    height: 100%;
+    left: -25px;
+  }
+}
 }
 </style>

@@ -40,6 +40,7 @@ module.exports = {
       "rounded-50": "50px",
     },
     width: {
+      150: "150px",
       270: "270px",
       320: "320px",
       371: "371px",
