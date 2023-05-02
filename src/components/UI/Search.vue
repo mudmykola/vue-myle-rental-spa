@@ -6,7 +6,7 @@
            :alt="icon.alt">
     </div>
     <div
-        class="search-container absolute  top-0 right-0 hidden border-none z-50"
+        class="search-container absolute  top-0 right-0 w-150 border-none z-50"
         v-show="showSearch">
       <input class="text-default outline-c400 "
              type="text"
@@ -16,11 +16,8 @@
     </div>
   </div>
 </template>
-
 <script>
 import SearchIcon from "/src/assets/image/svg/search.svg"
-
-
 export default {
   name: "TheSearch",
   components: {},
