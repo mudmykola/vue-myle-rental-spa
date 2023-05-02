@@ -8,7 +8,7 @@
     <div
         class="search-container absolute  top-0 right-0 w-150 border-none z-50"
         v-show="showSearch">
-      <input class="text-default outline-c400 "
+      <input class="text-default outline-c700"
              type="text"
              v-model="searchQuery"
              @input="search"
@@ -18,6 +18,7 @@
 </template>
 <script>
 import SearchIcon from "/src/assets/image/svg/search.svg"
+
 export default {
   name: "TheSearch",
   components: {},
@@ -59,5 +60,6 @@ export default {
 
 <style lang="scss">
 @use "src/styles/variables" as var;
+
 
 </style>

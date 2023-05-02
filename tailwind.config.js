@@ -10,6 +10,8 @@ module.exports = {
       c500: " #F4F4F4",
       c600: " #81C4FF",
       c700: " #464A4E",
+      g100: " #61B3F2",
+      g200: " #5566D9",
       default: " #fff",
     },
     fontWeight: {
@@ -21,6 +23,7 @@ module.exports = {
     fontSize: {
       16: "16px",
       18: "18px",
+      20: '20px',
       24: "24px",
       32: "32px",
       48: "48px",
@@ -40,6 +43,8 @@ module.exports = {
       "rounded-50": "50px",
     },
     width: {
+
+      128: '128px',
       150: "150px",
       270: "270px",
       320: "320px",
@@ -52,10 +57,15 @@ module.exports = {
       847: "847px",
       "w-940": "940px",
     },
+    height: {
+      44: '44px',
+      64: '64px',
+    },
     borderWidth: {
       100: "100px",
     },
     borderRadius: {
+      4: '4px',
       8: '8px',
     }
 

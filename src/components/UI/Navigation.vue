@@ -1,5 +1,6 @@
 <template>
-  <div class="navigation bg-c100 h-16 flex items-center justify-between rounded-8">
+  <div
+      class="navigation bg-c100 h-64 flex items-center justify-between rounded-8">
     <div class="navigation-left__box flex items-center">
       <div class="navigation-logo flex items-center pl-4 pr-4">
         <a :href="logo.logoLink">
@@ -17,8 +18,9 @@
         </ul>
       </nav>
     </div>
-    <div class="navigation-right__box flex items-center h-8 relative">
+    <div class="navigation-right__box flex items-center h-8 relative pr-4">
       <Search />
+      <Button  class="pl-6" :text="btnText" :url="btnUrl" />
     </div>
   </div>
 </template>
@@ -26,11 +28,13 @@
 <script>
 import Logo from '@/assets/image/logo.svg'
 import Search from "@/components/UI/Search.vue";
+import Button from "@/components/UI/Button.vue";
 
 export default {
   name: "TheNavigation",
   components: {
     Search,
+    Button,
   },
   data() {
     return {
@@ -69,6 +73,19 @@ export default {
       ],
     }
   },
+  props: {
+    btnText: {
+      type: String,
+      required: true,
+      default: 'Contact Sales',
+    },
+    btnUrl:{
+      type: String,
+      required: true,
+      default: 'https://google.com',
+    },
+  },
+
 }
 </script>
 
