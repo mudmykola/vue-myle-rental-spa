@@ -10,6 +10,8 @@ module.exports = {
       c500: " #F4F4F4",
       c600: " #81C4FF",
       c700: " #464A4E",
+      c800: " #F5C473",
+      c900: " #3772E1",
       g100: " #61B3F2",
       g200: " #5566D9",
       default: " #fff",
@@ -21,6 +23,7 @@ module.exports = {
       "font-eb": "800",
     },
     fontSize: {
+      14:'14px',
       16: "16px",
       18: "18px",
       20: '20px',
@@ -29,6 +32,7 @@ module.exports = {
       48: "48px",
     },
     lineHeight: {
+      18: '18px',
       20: "20px",
       22: "22px",
       28: "28px",
@@ -43,14 +47,15 @@ module.exports = {
       "rounded-50": "50px",
     },
     width: {
-
       128: '128px',
       150: "150px",
+      160: '160px',
       270: "270px",
       320: "320px",
       371: "371px",
       400: "400px",
       "w-470": "470px",
+      513: '513px',
       584: '584px',
       655: "655px",
       672: "672px",
@@ -67,7 +72,7 @@ module.exports = {
     borderRadius: {
       4: '4px',
       8: '8px',
-    }
+    },
 
   },
   variants: {

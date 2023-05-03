@@ -84,6 +84,7 @@ export default {
       required: true,
       default: 'https://google.com',
     },
+
   },
 
 }
