@@ -1,11 +1,13 @@
 <template>
   <div class="header-content__box flex items-start justify-between mt-48 ">
-    <div class="header-content__text text-default w-513">
+    <div class="header-content__text text-default w-513" data-aos="fade-right"  data-aos-easing="linear"
+         data-aos-duration="1500">
       <h3 class=" text-c800 font-font-eb pb-3">{{ subtitle }}</h3>
       <h1 class="pb-4 text-32 leading-36 font-font-eb">{{ title }}</h1>
       <p class="opacity-50 font-font-r text-14 leading-18">{{ desc }}</p>
     </div>
-    <div class="header-content__img relative">
+    <div class="header-content__img relative " data-aos="fade-left"  data-aos-easing="linear"
+         data-aos-duration="1500">
       <div
           class="header-content__img--map absolute  animate-bounce ">
         <img :src="headerImageMap.img"
