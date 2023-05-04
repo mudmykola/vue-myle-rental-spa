@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      c100: " #31353A",
+      c100: " #353A40",
       c200: " #AFB5BD",
       c300: " #201918",
       c400: " #F8F9FA",
@@ -23,17 +23,17 @@ module.exports = {
       "font-eb": "800",
     },
     fontSize: {
-      14:'14px',
+      14: "14px",
       16: "16px",
       18: "18px",
-      20: '20px',
+      20: "20px",
       24: "24px",
       32: "32px",
       40: "40px",
       48: "48px",
     },
     lineHeight: {
-      18: '18px',
+      18: "18px",
       20: "20px",
       22: "22px",
       28: "28px",
@@ -49,33 +49,33 @@ module.exports = {
       "rounded-50": "50px",
     },
     width: {
-      128: '128px',
+      128: "128px",
       150: "150px",
-      160: '160px',
+      160: "160px",
       270: "270px",
       320: "320px",
       371: "371px",
       400: "400px",
+      444: "444px",
       "w-470": "470px",
-      513: '513px',
-      584: '584px',
+      513: "513px",
+      584: "584px",
       655: "655px",
       672: "672px",
       847: "847px",
       "w-940": "940px",
     },
     height: {
-      44: '44px',
-      64: '64px',
+      44: "44px",
+      64: "64px",
     },
     borderWidth: {
       100: "100px",
     },
     borderRadius: {
-      4: '4px',
-      8: '8px',
+      4: "4px",
+      8: "8px",
     },
-
   },
   variants: {
     extend: {},
