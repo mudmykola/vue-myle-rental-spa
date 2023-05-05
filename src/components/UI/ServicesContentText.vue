@@ -1,6 +1,6 @@
 <template>
   <div
-    class="services-content__box flex justify-between pt-20"
+    class="services-content__box flex items-center justify-between pt-20"
     v-for="item in GET_SERVICES_TITLE"
     :key="item.id"
   >
@@ -30,7 +30,11 @@
       </p>
     </div>
     <div class="services-content__image">
-      <img :src="require('/src/assets/image/' + item.img)" :alt="item.altImg" />
+      <img
+        class="hover:skew-y-3"
+        :src="require('/src/assets/image/' + item.img)"
+        :alt="item.altImg"
+      />
     </div>
   </div>
 </template>
@@ -46,9 +50,20 @@ export default {
 </script>
 
 <style lang="scss">
-.services-content__box {
-  p + p {
-    margin-top: 10px;
+@use "src/styles/variables" as var;
+.services-content {
+  &__box {
+    p + p {
+      margin-top: 10px;
+    }
+  }
+  &__image {
+    img {
+      @extend %htrans;
+      &:hover {
+        @extend %htrans;
+      }
+    }
   }
 }
 </style>
