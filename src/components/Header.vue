@@ -1,29 +1,25 @@
 <template>
-  <div class="header"
-       :style="bg">
+  <div class="header" :style="bg">
     <div class="container-x">
       <div class="pt-4">
-        <Navigation/>
+        <Navigation />
       </div>
       <div class="header-content">
-        <HeaderContent :subtitle="headerContentSubTitle"
-                       :title="headerContentTitle"
-                       :desc="headerContentDesc"
-                       :btn="headerContentBtn"
-
-
+        <HeaderContent
+          :subtitle="headerContentSubTitle"
+          :title="headerContentTitle"
+          :desc="headerContentDesc"
+          :btn="headerContentBtn"
         />
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
 import bgImage from "@/assets/image/bg.png";
 import Navigation from "@/components/UI/Navigation.vue";
 import HeaderContent from "@/components/UI/HeaderContent.vue";
-
 
 export default {
   name: "TheHeader",
@@ -45,15 +41,14 @@ export default {
     headerContentDesc: {
       type: String,
       required: true,
-      default: "Various ADA compliant wheelchair accessible vehicles available for rent nationwide.",
+      default:
+        "Various ADA compliant wheelchair accessible vehicles available for rent nationwide.",
     },
     headerContentBtn: {
       type: String,
       required: true,
       default: "Inquire Now",
-
     },
-
   },
   computed: {
     bg() {
@@ -61,17 +56,18 @@ export default {
         "background-image": `url(${bgImage})`,
         "background-repeat": "no-repeat",
         "background-size": "cover",
-      }
+      };
     },
   },
-}
+};
 </script>
 
 <style lang="scss">
 @use "src/styles/variables" as var;
 
 .header {
-  height: 100vh;
+  height: 740px;
+  max-height: 100%;
   width: 100%;
 }
 </style>
