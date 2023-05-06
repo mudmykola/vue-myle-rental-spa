@@ -1,7 +1,9 @@
 <template>
   <div class="container-x">
-    <div class="features-content__box text-default w-w-470">
-      <div class="features-content__text">
+    <div
+      class="features-content__box text-default flex items-center justify-between"
+    >
+      <div class="features-content__text w-w-470">
         <h2 class="text-32 leading-36 font-font-eb pb-4">{{ title }}</h2>
         <p class="text-16 leading-18 font-font-r opacity-50 pb-6">{{ desc }}</p>
         <ul>
@@ -13,19 +15,34 @@
             {{ item.text }}
           </li>
         </ul>
+        <Button class="mt-10" :text="btnText" :url="btnUrl" />
+      </div>
+      <div class="features-content__image">
+        <img :src="featuresImg.img" :alt="featuresImg.alt" />
       </div>
     </div>
-    <Button class="mt-10" :text="btnText" :url="btnUrl" />
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 import Button from "./Button.vue";
+import FeaturesImage from "@/assets/image/features-img-car.webp";
+
 export default {
   name: "TheFeaturesContent",
   components: {
     Button,
+  },
+  data() {
+    return {
+      featuresImg: {
+        img: FeaturesImage,
+        alt: "features-img",
+        type: Object,
+        requered: true,
+      },
+    };
   },
   props: {
     title: {

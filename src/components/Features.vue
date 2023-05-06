@@ -14,12 +14,12 @@ export default {
   props: {
     featuresTitle: {
       type: String,
-      requered: true,
+      required: true,
       default: "Wheelchair Vans in Our Fleet",
     },
     featuresDesc: {
       type: String,
-      requered: true,
+      required: true,
       default:
         "ADA compliant wheelchair accessible vehicles of different builds accommodating various group sizes (Chrysler Pacifica, Toyota SIenna or similar)",
     },
