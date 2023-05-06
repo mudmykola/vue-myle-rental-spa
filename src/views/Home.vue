@@ -6,6 +6,7 @@
     <Services />
     <Features />
     <Promo />
+    <Pricing />
   </div>
 </template>
 
@@ -16,6 +17,8 @@ import Slider from "@/components/Slider.vue";
 import Services from "@/components/Services.vue";
 import Features from "@/components/Features";
 import Promo from "@/components/Promo.vue";
+import Pricing from "@/components/Pricing.vue";
+
 export default {
   name: "TheHome",
   components: {
@@ -25,6 +28,7 @@ export default {
     Features,
     Slider,
     Promo,
+    Pricing,
   },
 };
 </script>
