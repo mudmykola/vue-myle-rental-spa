@@ -5,12 +5,8 @@
         <Navigation />
       </div>
       <div class="header-content">
-        <HeaderContent
-          :subtitle="headerContentSubTitle"
-          :title="headerContentTitle"
-          :desc="headerContentDesc"
-          :btn="headerContentBtn"
-        />
+        <HeaderContent :subtitle="headerContentSubTitle" :title="headerContentTitle" :desc="headerContentDesc"
+          :btn="headerContentBtn" />
       </div>
     </div>
   </div>

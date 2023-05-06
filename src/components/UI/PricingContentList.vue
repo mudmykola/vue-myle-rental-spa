@@ -17,7 +17,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-    name: 'ThePricingContentList',
+    name: 'PricingContentList',
     computed: {
         ...mapGetters(['GET_PRICING_LIST']),
     },

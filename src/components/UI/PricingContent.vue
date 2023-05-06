@@ -9,12 +9,10 @@
 
 <script>
 
-import PricingContentList from './PricingContentList.vue';
+
 export default {
   name: 'ThePricingContent',
-  components: {
-    PricingContentList,
-  },
+
   props: {
     title: {
       type: String,
