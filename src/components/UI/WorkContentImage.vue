@@ -1,14 +1,12 @@
 <template>
-    <div class="work bg-default mt-32 mb-32">
-        <WorkContent />
-
+    <div>
+        <img src="" alt="">
     </div>
 </template>
 
 <script>
 export default {
-    name: 'TheWork',
-
+    name: 'WorkContentImage',
 }
 </script>
 
