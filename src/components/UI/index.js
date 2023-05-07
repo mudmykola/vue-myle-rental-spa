@@ -3,6 +3,7 @@ import AboutContent from '@/components/UI/AboutContent';
 import WorkContent from '@/components/UI/WorkContent';
 import WorkContentText from '@/components/UI/WorkContentText';
 import ButtonTab from '@/components/UI/ButtonTab';
+import LinkButton from "@/components/UI/LinkButton.vue";
 import WorkContentImage from '@/components/UI/WorkContentImage';
 
 export default [
@@ -12,5 +13,6 @@ export default [
     WorkContentText,
     ButtonTab,
     WorkContentImage,
+    LinkButton,
 ]
 

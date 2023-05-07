@@ -3,7 +3,8 @@
         <img :src="image.img" :alt="image.alt">
         <ul>
             <li v-for="(marker, index) in markers" :key="index"
-                :class="'work-content__image--' + marker.city + ' absolute top-' + marker.top + ' right-' + marker.right + ' animate-pulse-' + (index + 5)">
+                :class="'work-content__image--' + marker.city + ' absolute animate-pulse-5'"
+                :style="{ top: marker.top + '%', right: marker.right + '%' }">
                 <img :src="icon.img" :alt="marker.alt">
             </li>
         </ul>
@@ -17,12 +18,13 @@ export default {
     data() {
         return {
             markers: [
-                { city: 'newyork', top: '16', right: '16', alt: 'New York' },
-                { city: 'newjersey', top: '24', right: '12', alt: 'New Jersey' },
-                { city: 'georgia', top: '32', right: '32', alt: 'Georgia' },
-                { city: 'florida', top: '56', right: '28', alt: 'Florida' },
-                { city: 'ohio', top: '72', right: '20', alt: 'Ohio' },
-            ]
+                { city: 'newyork', top: '15', right: '10', alt: 'New York' },
+                { city: 'newjersey', top: '28', right: '10', alt: 'New Jersey' },
+                { city: 'georgia', top: '35', right: '22', alt: 'Georgia' },
+                { city: 'florida', top: '60', right: '20', alt: 'Florida' },
+                { city: 'ohio', top: '80', right: '14', alt: 'Ohio' },
+            ],
+
         }
     },
     props: {
@@ -43,6 +45,7 @@ export default {
             required: true
         },
     },
+
 }
 </script>
 

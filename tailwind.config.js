@@ -11,6 +11,7 @@ module.exports = {
             'pulse-7': 'pulse 7s linear infinite',
             'pulse-8': 'pulse 8s linear infinite',
             'pulse-9': 'pulse 9s linear infinite',
+            'bounce': 'bounce 5s linear infinite',
         },
         colors: {
             c100: "#353A40",
@@ -94,8 +95,5 @@ module.exports = {
             8: "8px",
         },
     },
-    variants: {
-        extend: {},
-    },
-    plugins: [],
+
 };
