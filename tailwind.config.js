@@ -5,6 +5,13 @@ module.exports = {
     ],
     darkMode: true, // or 'media' or 'class'
     theme: {
+        animation: {
+            'pulse-5': 'pulse 5s linear infinite',
+            'pulse-6': 'pulse 6s linear infinite',
+            'pulse-7': 'pulse 7s linear infinite',
+            'pulse-8': 'pulse 8s linear infinite',
+            'pulse-9': 'pulse 9s linear infinite',
+        },
         colors: {
             c100: "#353A40",
             c101: "#595959",

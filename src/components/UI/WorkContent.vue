@@ -1,16 +1,28 @@
 <template>
     <div class="work-content container-x flex justify-between items-center">
         <WorkContentText :title="workTitle" :desc="workDesc" />
-        <WorkContentImage />
+        <WorkContentImage :image="workContentImage" :icon="mapMarker" />
     </div>
 </template>
 
 <script>
-
-
+import mapImage from '@/assets/image/maps.webp';
+import mapMarkerImage from '@/assets/image/svg/map.svg';
 export default {
     name: "WorkContent",
+    data() {
+        return {
+            workContentImage: {
+                img: mapImage,
+                alt: 'maps-img',
+            },
+            mapMarker: {
+                img: mapMarkerImage,
+                altMap: 'map-icon',
+            },
 
+        }
+    },
     props: {
         workTitle: {
             type: String,
