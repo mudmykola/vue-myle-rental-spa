@@ -5,6 +5,9 @@ import WorkContentText from '@/components/UI/WorkContentText';
 import ButtonTab from '@/components/UI/ButtonTab';
 import LinkButton from "@/components/UI/LinkButton.vue";
 import WorkContentImage from '@/components/UI/WorkContentImage';
+import ContactsContent from '@/components/UI/ContactsContent';
+import ContactsContentImage from '@/components/UI/ContactsContentImage';
+import ContactsContentText from '@/components/UI/ContactsContentText';
 
 export default [
     PricingContentList,
@@ -14,5 +17,8 @@ export default [
     ButtonTab,
     WorkContentImage,
     LinkButton,
+    ContactsContent,
+    ContactsContentImage,
+    ContactsContentText
 ]
 

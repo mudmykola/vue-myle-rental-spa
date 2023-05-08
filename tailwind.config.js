@@ -5,6 +5,7 @@ module.exports = {
     ],
     darkMode: true, // or 'media' or 'class'
     theme: {
+
         animation: {
             'pulse-5': 'pulse 5s linear infinite',
             'pulse-6': 'pulse 6s linear infinite',
@@ -63,6 +64,7 @@ module.exports = {
             "rounded-50": "50px",
         },
         width: {
+            74: "74px",
             128: "128px",
             150: "150px",
             160: "160px",
@@ -86,6 +88,7 @@ module.exports = {
         height: {
             44: "44px",
             64: "64px",
+            109: "109px",
         },
         borderWidth: {
             100: "100px",

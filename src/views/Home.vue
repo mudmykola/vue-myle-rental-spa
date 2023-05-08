@@ -8,6 +8,7 @@
     <Promo />
     <Pricing />
     <Work />
+    <Contacts />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Features from "@/components/Features";
 import Promo from "@/components/Promo.vue";
 import Pricing from "@/components/Pricing.vue";
 import Work from '@/components/Work'
+import Contacts from '@/components/Contacts'
 
 export default {
   name: "TheHome",
@@ -32,6 +34,7 @@ export default {
     Promo,
     Pricing,
     Work,
+    Contacts,
   },
 };
 </script>
