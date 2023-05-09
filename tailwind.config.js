@@ -5,7 +5,6 @@ module.exports = {
     ],
     darkMode: true, // or 'media' or 'class'
     theme: {
-
         animation: {
             'pulse-5': 'pulse 5s linear infinite',
             'pulse-6': 'pulse 6s linear infinite',
@@ -98,5 +97,4 @@ module.exports = {
             8: "8px",
         },
     },
-
 };
