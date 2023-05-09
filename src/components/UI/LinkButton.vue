@@ -1,9 +1,12 @@
 <template>
-  <div class="link-btn">
-    <a class="  rounded-4 font-font-b text-default hover:bg-default hover:text-c100 pt-3 pb-3 pl-9 pr-9  bg-c900"
-      :href="url">{{
+  <div class="link-btn w-170">
+    <a class=" flex items-center text-center  rounded-4 font-font-b text-default hover:bg-default hover:text-c100 pt-3 pb-3 pl-9 pr-9  bg-c900"
+       :href="url">
+      <slot name="icon"></slot>
+      {{
         text
-      }}</a>
+      }}
+    </a>
   </div>
 </template>
 <script>
