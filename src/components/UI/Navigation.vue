@@ -139,4 +139,7 @@ export default {
       left: -25px;
     }
   }
-}</style>
+
+
+}
+</style>

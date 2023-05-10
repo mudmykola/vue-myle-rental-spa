@@ -16,6 +16,7 @@ export default [
     AboutContent,
     WorkContent,
     WorkContentText,
+
     ButtonTab,
     WorkContentImage,
     LinkButton,

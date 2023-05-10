@@ -1,8 +1,9 @@
 <template>
   <div class="header" :style="bg">
     <div class="container-x">
-      <div class="pt-4">
-        <Navigation />
+      <div class="pt-4 header-box ">
+        <Navigation class="navigation" />
+        <BurgerMenu class="navigation-burger__menu" :logo="burgerLogo" />
       </div>
       <div class="header-content">
         <HeaderContent :subtitle="headerContentSubTitle" :title="headerContentTitle" :desc="headerContentDesc"
@@ -16,12 +17,23 @@
 import bgImage from "@/assets/image/bg.png";
 import Navigation from "@/components/UI/Navigation.vue";
 import HeaderContent from "@/components/UI/HeaderContent.vue";
+import Logo from '@/assets/image/logo.svg';
 
 export default {
   name: "TheHeader",
   components: {
     Navigation,
     HeaderContent,
+  },
+  data() {
+    return {
+      burgerLogo: {
+        logoImg: Logo,
+        logoAlt: 'logo-burger',
+
+      },
+
+    }
   },
   props: {
     headerContentSubTitle: {
@@ -45,6 +57,10 @@ export default {
       required: true,
       default: "Inquire Now",
     },
+    fontSize: {
+      type: String,
+      default: '14px',
+    }
   },
   computed: {
     bg() {
@@ -65,5 +81,36 @@ export default {
   height: 740px;
   max-height: 100%;
   width: 100%;
+}
+
+.navigation {
+  &-burger__menu {
+    display: none;
+  }
+}
+
+
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+  .navigation {
+    display: none;
+
+  }
+
+  .header-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
 }
 </style>
