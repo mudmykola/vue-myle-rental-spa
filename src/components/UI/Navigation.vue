@@ -1,26 +1,22 @@
 <template>
-  <div
-      class="navigation bg-c100 h-64 flex items-center justify-between rounded-8">
+  <div class="navigation bg-c100 h-64 flex items-center justify-between rounded-8">
     <div class="navigation-left__box flex items-center">
       <div class="navigation-logo flex items-center pl-4 pr-4">
         <a :href="logo.logoLink">
-          <img :src="logo.img"
-               :alt="logo.altLogo">
+          <img :src="logo.img" :alt="logo.altLogo">
         </a>
       </div>
       <nav class="navigation-menu">
         <ul class="flex items-center gap-8 pl-8">
-          <li v-for="item in links"
-              :key="item.id">
-            <a class="text-c200 hover:text-default"
-               :href="item.url">{{ item.name }}</a>
+          <li v-for="item in links" :key="item.id">
+            <a class="text-c200 hover:text-default" :href="item.url">{{ item.name }}</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="navigation-right__box flex items-center h-8 relative pr-4">
       <Search />
-      <Button  class="pl-6" :text="btnText" :url="btnUrl" />
+      <Button class="pl-6" :text="btnText" :url="btnUrl" />
     </div>
   </div>
 </template>
@@ -79,7 +75,7 @@ export default {
       required: true,
       default: 'Contact Sales',
     },
-    btnUrl:{
+    btnUrl: {
       type: String,
       required: true,
       default: 'https://google.com',
@@ -92,8 +88,10 @@ export default {
 
 <style lang="scss">
 @use "src/styles/variables" as var;
+
 .navigation {
   position: relative;
+
   &-logo {
     &:before {
       position: absolute;
@@ -103,9 +101,11 @@ export default {
       left: 8%;
     }
   }
+
   &-menu {
     a {
       position: relative;
+
       &:after {
         position: absolute;
         content: '';
@@ -115,24 +115,28 @@ export default {
         bottom: -3px;
         @extend %dtrans;
       }
+
       @extend %dtrans;
+
       &:hover {
         @extend %htrans;
+
         &:after {
           width: 100%;
         }
+
         @extend %htrans;
       }
     }
   }
-&-right__box{
-  &:after{
-    position: absolute;
-    content: '';
-    border: 1px solid var.$c700;
-    height: 100%;
-    left: -25px;
+
+  &-right__box {
+    &:after {
+      position: absolute;
+      content: '';
+      border: 1px solid var.$c700;
+      height: 100%;
+      left: -25px;
+    }
   }
-}
-}
-</style>
+}</style>

@@ -9,6 +9,7 @@ import WorkContentImage from '@/components/UI/WorkContentImage';
 import ContactsContent from '@/components/UI/ContactsContent';
 import ContactsContentImage from '@/components/UI/ContactsContentImage';
 import ContactsContentText from '@/components/UI/ContactsContentText';
+import BurgerMenu from '@/components/UI/BurgerMenu';
 
 export default [
     PricingContentList,
@@ -21,5 +22,6 @@ export default [
     ContactsContent,
     ContactsContentImage,
     ContactsContentText,
+    BurgerMenu,
 
 ]
