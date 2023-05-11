@@ -1,26 +1,22 @@
 <template>
-    <div>
-
+    <div class="bg-c100 text-default">
+        <AskedContent class=" container-x" :title="askedTitle" />
     </div>
 </template>
 
 <script>
+
+
 export default {
-    name: 'TheAsked',,
+    name: "TheAsked",
+    props: {
+        askedTitle: {
+            type: String,
+            requerid: true,
+            default: 'Frequently asked questions',
+        }
+    }
 
-    data() {
-        return {
-
-        };
-    },
-
-    mounted() {
-
-    },
-
-    methods: {
-
-    },
 };
 </script>
 

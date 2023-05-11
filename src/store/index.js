@@ -3,6 +3,7 @@ import services from "./modules/services";
 import features from "./modules/features";
 import slider from "./modules/slider";
 import pricing from "./modules/pricing";
+import asked from "./modules/asked";
 
 export default createStore({
   state: {},
@@ -14,5 +15,6 @@ export default createStore({
     features,
     slider,
     pricing,
+    asked,
   },
 });
