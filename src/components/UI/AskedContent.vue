@@ -58,12 +58,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.asked-content__item {
-    height: 60px;
-    overflow-y: auto;
-
-}
-
 svg-icon {
     transition: transform 0.5s ease-in-out;
 }

@@ -10,6 +10,7 @@
     <Work />
     <Contacts />
     <Asked />
+    <Footer />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import Pricing from "@/components/Pricing.vue";
 import Work from '@/components/Work';
 import Contacts from '@/components/Contacts';
 import Asked from "@/components/Asked.vue";
+import Footer from '@/components/Footer';
 
 
 export default {
@@ -39,6 +41,7 @@ export default {
     Work,
     Contacts,
     Asked,
+    Footer,
   },
 };
 </script>
