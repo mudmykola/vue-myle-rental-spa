@@ -49,12 +49,12 @@ export default {
         {
           id: 2,
           name: 'Technology',
-          url: '/',
+          url: '#services',
         },
         {
           id: 3,
           name: 'Driver weith Myle',
-          url: '/',
+          url: '#work',
         },
         {
           id: 4,
@@ -64,7 +64,7 @@ export default {
         {
           id: 5,
           name: 'Contact',
-          url: '/',
+          url: '#contact',
         },
       ],
     }
