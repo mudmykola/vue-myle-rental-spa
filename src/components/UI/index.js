@@ -10,7 +10,10 @@ import ContactsContentImage from '@/components/UI/ContactsContentImage';
 import ContactsContentText from '@/components/UI/ContactsContentText';
 import BurgerMenu from '@/components/UI/BurgerMenu';
 import AskedContent from '@/components/UI/AskedContent';
+import AskedAccordion from "@/components/UI/AskedAccordion.vue";
 import FooterContent from '@/components/UI/FooterContent';
+import FooterNavLinkIndustr from "@/components/UI/FooterNavLinkIndustr.vue";
+import FooterNavLinkCompany from "@/components/UI/FooterNavLinkCompany.vue";
 
 export default [
     PricingContentList,
@@ -25,6 +28,9 @@ export default [
     ContactsContentText,
     BurgerMenu,
     AskedContent,
+    AskedAccordion,
     FooterContent,
+    FooterNavLinkIndustr,
+    FooterNavLinkCompany,
 
 ]

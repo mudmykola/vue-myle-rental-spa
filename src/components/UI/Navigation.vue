@@ -15,8 +15,8 @@
       </nav>
     </div>
     <div class="navigation-right__box flex items-center h-8 relative pr-4">
-      <Search />
-      <Button class="pl-6" :text="btnText" :url="btnUrl" />
+      <Search/>
+      <Button class="pl-6" :text="btnText" :url="btnUrl"/>
     </div>
   </div>
 </template>
