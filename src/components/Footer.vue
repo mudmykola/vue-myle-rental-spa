@@ -1,12 +1,15 @@
 <template>
-  <div class="bg-c100 text-default">
-    <FooterContent class="container-x"
-                   :logo="footerLogo"
-                   :logoDesc="footerLogoDesc"
-                   :partner="footerPartner"
-                   :footerIndustrTitle="footerNavIndustrTitle"
-                   :footerCompanyTitle="footerNavCompanyTitle"
-    />
+  <div class="footer bg-c100  text-default">
+    <div class=" container-x">
+      <FooterContent
+          :logo="footerLogo"
+          :logoDesc="footerLogoDesc"
+          :partner="footerPartner"
+          :footerIndustrTitle="footerNavIndustrTitle"
+          :footerCompanyTitle="footerNavCompanyTitle"
+          :footerCopyTitle="footerCopyTitle"
+      />
+    </div>
   </div>
 </template>
 
@@ -25,7 +28,8 @@ export default {
       footerPartner: {
         img: FooterPartner,
         alt: 'footer-partner',
-      }
+      },
+
     };
   },
   props: {
@@ -43,6 +47,11 @@ export default {
       type: String,
       required: true,
       default: 'Company',
+    },
+    footerCopyTitle: {
+      type: String,
+      required: true,
+      default: '© Myle',
     },
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-default mt-32 mb-32 pt-10 pb-10">
+  <div id="about" class="bg-default mt-32 mb-32 pt-10 pb-10">
     <div class="container-x">
       <AboutContent :title="aboutTitle" :desc="aboutDesc" />
     </div>

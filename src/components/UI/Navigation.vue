@@ -44,7 +44,7 @@ export default {
         {
           id: 1,
           name: 'Industries',
-          url: '/',
+          url: '#features',
         },
         {
           id: 2,
@@ -59,7 +59,7 @@ export default {
         {
           id: 4,
           name: 'Blog',
-          url: '/',
+          url: '#about',
         },
         {
           id: 5,

@@ -1,8 +1,8 @@
 <template>
 <div>
-  <ul>
-    <li v-for="item in footerNavLinkIndustr" :key="item.id">
-      <a :href="item.url">{{item.name}}</a>
+  <ul  class="footer-list">
+    <li  v-for="item in footerNavLinkIndustr" :key="item.id">
+      <a class="text-16 leading-18 opacity-50  hover:opacity-80 font-font-r" :href="item.url">{{item.name}}</a>
     </li>
   </ul>
 </div>
@@ -41,5 +41,6 @@ export default {
 </script>
 
 <style lang="scss">
+@use "src/styles/variables" as var;
 
 </style>

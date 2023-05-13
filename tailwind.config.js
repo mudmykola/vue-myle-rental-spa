@@ -57,6 +57,7 @@ module.exports = {
         },
         boxShadow: {
             "border-ef": "0px 2px 10px rgba(48, 36, 35, 0.2)",
+            "border-ef-2": "0px 2px 10px rgba(48, 36, 35, 0.8)",
         },
         borderRadius: {
             "rounded-8": "8px",
@@ -66,7 +67,9 @@ module.exports = {
         width: {
             74: "74px",
             128: "128px",
+            140: "140px",
             150: "150px",
+            155: "155px",
             160: "160px",
             170: "170px",
             270: "270px",

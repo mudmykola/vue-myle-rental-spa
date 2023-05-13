@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-c100 pt-11 pb-11 mt-32">
+  <div id="features" class="features scroll-smooth bg-c100 pt-11 pb-11 mt-32">
     <FeaturesContent :title="featuresTitle" :desc="featuresDesc" />
   </div>
 </template>

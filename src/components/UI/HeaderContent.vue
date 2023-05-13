@@ -13,7 +13,7 @@
       <img :src="headerImg.img" :alt="headerImg.alt" />
     </div>
   </div>
-  <LinkButton :url="linkUrl" :text="linkText" />
+  <LinkButton class="w-155 text-center" :url="linkUrl" :text="linkText" />
 </template>
 
 <script>

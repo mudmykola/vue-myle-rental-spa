@@ -1,8 +1,8 @@
 <template>
 <div>
-  <ul>
-    <li v-for="item in footerNavLinkCpmpany" :key="item.id">
-      <a :href="item.url">{{item.name}}</a>
+  <ul class="footer-list">
+    <li  v-for="item in footerNavLinkCompany" :key="item.id">
+      <a class="text-16 leading-18 opacity-50 hover:opacity-80 font-font-r" :href="item.url">{{item.name}}</a>
     </li>
   </ul>
 </div>
@@ -14,7 +14,7 @@ export default {
 
   data() {
     return {
-      footerNavLinkCpmpany: [
+      footerNavLinkCompany: [
         {
           id: 1,
           name: 'Ride with Myle',
@@ -42,5 +42,16 @@ export default {
 </script>
 
 <style lang="scss">
-
+@use "src/styles/variables" as var;
+.footer-list{
+  a{
+    @extend %dtrans;
+    &:hover{
+      @extend %htrans;
+    }
+  }
+  li+li{
+    margin-top: 16px;
+  }
+}
 </style>
