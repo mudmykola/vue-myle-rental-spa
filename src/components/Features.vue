@@ -21,6 +21,7 @@ export default {
       type: String,
       required: true,
       default:
+
         "ADA compliant wheelchair accessible vehicles of different builds accommodating various group sizes (Chrysler Pacifica, Toyota SIenna or similar)",
     },
   },
