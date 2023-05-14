@@ -1,6 +1,6 @@
 <template>
   <div class="header" :style="bg">
-    <div class="container-x">
+    <div class="container-x header-container">
       <div class="pt-4 header-box ">
         <Navigation class="navigation" />
         <BurgerMenu class="navigation-burger__menu" :logo="burgerLogo" />
@@ -104,13 +104,18 @@ export default {
 @media (max-width: 320px) {
   .navigation {
     display: none;
-
   }
+  .header {
+    &-container{
+      width: 320px;
+    }
+    &-box {
+      width: 100%;
+      margin: 0 auto;
+    }
+&-content{
 
-  .header-box {
-    width: 100%;
-    margin: 0 auto;
+}
   }
-
 }
 </style>
