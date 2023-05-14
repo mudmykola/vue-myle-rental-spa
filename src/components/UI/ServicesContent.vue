@@ -1,5 +1,5 @@
 <template>
-  <div class="service-content__box">
+  <div class="service-content__box ">
     <ServicesContentText />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-x">
+  <div class="container-x ">
     <SliderContent
       :title="sliderTitle"
       :desc="sliderDesc"

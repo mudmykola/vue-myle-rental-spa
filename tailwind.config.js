@@ -103,5 +103,8 @@ module.exports = {
             4: "4px",
             8: "8px",
         },
+        screens: {
+            m320: '320px',
+        }
     },
 };
