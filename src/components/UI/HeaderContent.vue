@@ -13,7 +13,7 @@
       <img :src="headerImg.img" :alt="headerImg.alt" />
     </div>
   </div>
-  <LinkButton class="w-155 text-center" :url="linkUrl" :text="linkText" />
+  <LinkButton class="header-content__link w-155 text-center" :url="linkUrl" :text="linkText" />
 </template>
 
 <script>
@@ -77,20 +77,5 @@ export default {
     top: -50%;
     left: 25%;
   }
-}
-
-// 768
-
-@media (max-width: 768px) {}
-
-// 600
-@media (max-width: 600px) {}
-
-// 480
-@media (max-width: 480px) {}
-
-// 320
-@media (max-width: 320px) {
-
 }
 </style>

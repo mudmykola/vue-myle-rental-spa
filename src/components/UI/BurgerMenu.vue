@@ -9,7 +9,7 @@
             <span></span>
             <span></span>
         </div>
-        <nav class="burger-menu__nav" :class="{ 'active': isActive }">
+        <nav class="burger-menu__nav z-20" :class="{ 'active': isActive }">
 
             <ul>
                 <li v-for="item in links" :key="item.id">

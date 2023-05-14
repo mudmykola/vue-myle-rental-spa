@@ -2,12 +2,12 @@
   <div class="header" :style="bg">
     <div class="container-x header-container">
       <div class="pt-4 header-box ">
-        <Navigation class="navigation" />
-        <BurgerMenu class="navigation-burger__menu" :logo="burgerLogo" />
+        <Navigation class="navigation"/>
+        <BurgerMenu class="navigation-burger__menu" :logo="burgerLogo"/>
       </div>
       <div class="header-content">
         <HeaderContent :subtitle="headerContentSubTitle" :title="headerContentTitle" :desc="headerContentDesc"
-          :btn="headerContentBtn" />
+                       :btn="headerContentBtn"/>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@ export default {
       type: String,
       required: true,
       default:
-        "Various ADA compliant wheelchair accessible vehicles available for rent nationwide.",
+          "Various ADA compliant wheelchair accessible vehicles available for rent nationwide.",
     },
     headerContentBtn: {
       type: String,
@@ -92,13 +92,16 @@ export default {
 
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+}
 
 // 320
 @media (max-width: 320px) {
@@ -106,16 +109,55 @@ export default {
     display: none;
   }
   .header {
-    &-container{
+    height: 500px;
+    &-container {
       width: 320px;
     }
+
     &-box {
       width: 100%;
       margin: 0 auto;
     }
-&-content{
 
-}
+    &-content {
+      &__box {
+        margin-top: 32px;
+        flex-direction: column;
+      }
+
+      &__text {
+        width: 100%;
+
+        h3 {
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        h1 {
+          font-size: 24px;
+          line-height: 28px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      &__img {
+        display: none;
+      }
+  &__link{
+    width: 100%;
+
+    margin-top: 24px;
+    a{
+
+      display: flex;
+      justify-content: center;
+    }
+  }
+    }
   }
 }
 </style>
