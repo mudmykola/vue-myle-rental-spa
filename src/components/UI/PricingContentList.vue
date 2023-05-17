@@ -1,7 +1,8 @@
 <template>
     <div class="pricing-box">
-        <ul class="grid grid-cols-3">
-            <li class="relative text-center cursor-pointer  w-350  hover:scale-105" v-for="item in GET_PRICING_LIST"
+        <ul class="pricing-box__list grid grid-cols-3">
+            <li class="pricing-box__item relative text-center cursor-pointer  w-350  hover:scale-105" v-for="item in
+            GET_PRICING_LIST"
                 :key="item.id">
                 <img class="m-auto absolute  bottom-32 left-40" :src="require('/src/assets/image/svg/' + item.img)"
                     :alt="item.alt">
@@ -38,5 +39,35 @@ export default {
             }
         }
     }
+}
+
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+.pricing-box{
+  ul{
+    grid-template-columns: repeat(1,1fr);
+    gap:50px;
+    li{
+      width: 100%;
+
+    }
+  }
+  &__item{
+    img{
+      left: 7rem;
+    }
+  }
+}
+
 }
 </style>

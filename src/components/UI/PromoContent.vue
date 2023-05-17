@@ -39,4 +39,29 @@ export default {
     }
   }
 }
+
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+.promo-content{
+  max-width: 290px;
+h2{
+  font-size: 30px;
+  line-height: 36px;
+}
+  img{
+    height: 150px;
+  }
+}
+
+}
 </style>
