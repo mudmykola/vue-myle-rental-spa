@@ -13,7 +13,7 @@
 
   <swiper
       id="slider"
-      class="slider"
+      class="slider-box"
       :navigation="{
       prevEl: prevButton,
       nextEl: nextButton,
@@ -111,25 +111,44 @@ export default {
 <style lang="scss">
 @use "src/styles/variables" as var;
 
-.slider-content{
-  &__title{
-    width: 280px;
-    text-align: left;
-    img{
-      margin-left: 0;
+
+// 768
+
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+  .slider-content{
+    &__title{
+      width: 280px;
+      text-align: left;
+      img{
+        margin-left: 0;
+      }
+      h2{
+        font-size: 24px;
+        line-height: 28px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 18px;
+        width: 100%;
+      }
     }
-    h2{
-      font-size: 24px;
-      line-height: 28px;
-    }
-    p{
-      font-size: 16px;
-      line-height: 18px;
-      width: 100%;
+    .swiper-slide{
+      width: 280px;
     }
   }
-.swiper-slide{
-  width: 280px;
-}
+
+
 }
 </style>

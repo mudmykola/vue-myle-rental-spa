@@ -11,7 +11,6 @@
       <div class="footer-box__navigation--indastr pr-36">
         <h2 class="text-16 leading-18 font-font-eb text-default pb-5">{{ footerIndustrTitle }}</h2>
         <FooterNavLinkIndustr/>
-
       </div>
       <div class="footer-box__navigation--company">
         <h2 class="text-16 leading-18 font-font-eb text-default pb-5">{{ footerCompanyTitle }}</h2>

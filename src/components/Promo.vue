@@ -1,5 +1,5 @@
 <template>
-  <div class=" container-x">
+  <div class="promo container-x">
     <PromoContent :title="promoTitle"
                   :image="promoImage"/>
   </div>
@@ -35,4 +35,21 @@ export default {
 
 <style lang="scss">
 @use "src/styles/variables" as var;
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+.promo{
+  width: 290px;
+}
+
+}
 </style>
