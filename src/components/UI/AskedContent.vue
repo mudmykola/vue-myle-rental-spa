@@ -36,7 +36,19 @@ export default {
 @media (max-width: 600px) {}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .asked-content{
+    max-width: 480px;
+    h2{
+      font-size: 30px;
+      line-height: 36px;
+    }
+    &__list{
+      grid-template-columns: repeat(1,1fr);
+      max-width: 450px;
+    }
+  }
+}
 
 // 320
 @media (max-width: 320px) {

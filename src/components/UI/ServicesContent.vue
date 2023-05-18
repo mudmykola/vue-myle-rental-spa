@@ -24,7 +24,13 @@ export default {
 @media (max-width: 600px) {}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .service-content {
+    &__boxing {
+      width: 450px;
+    }
+  }
+}
 
 // 320
 @media (max-width: 320px) {
@@ -32,9 +38,6 @@ export default {
     &__boxing {
       width: 290px;
     }
-
-
   }
-
 }
 </style>

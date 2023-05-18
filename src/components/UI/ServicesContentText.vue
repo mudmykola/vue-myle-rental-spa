@@ -66,7 +66,30 @@ export default {
 @media (max-width: 600px) {}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .services-content{
+    justify-content: space-between;
+
+    &__text{
+      p{
+        width: 250px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    &__title{
+      width: 250px;
+      h2{
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+    }
+    &__image{
+      width: 250px;
+    }
+  }
+}
 
 // 320
 @media (max-width: 320px) {

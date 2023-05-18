@@ -48,7 +48,20 @@ export default {
 @media (max-width: 600px) {}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .promo-content{
+  max-width: 480px;
+
+    h2{
+      font-size: 30px;
+      line-height: 36px;
+    }
+    img{
+      height: 150px;
+      margin: 0 auto;
+    }
+  }
+}
 
 // 320
 @media (max-width: 320px) {

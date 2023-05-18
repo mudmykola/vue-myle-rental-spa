@@ -60,6 +60,16 @@ export default {
 
 // 480
 @media (max-width: 480px) {
+  .slider{
+    width: 480px;
+    &-prev{
+      left: 10px;
+    }
+    &-next{
+      right: 10px;
+    }
+  }
+
 }
 
 // 320

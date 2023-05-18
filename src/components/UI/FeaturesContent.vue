@@ -79,7 +79,22 @@ export default {
 @media (max-width: 600px) {}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .features {
+    &-content {
+      &__box {
+        width: 450px;
+        flex-direction: column;
+      }
+      &__text{
+        max-width: 450px;
+      }
+      &__image{
+        margin-top: 50px;
+      }
+    }
+  }
+}
 
 // 320
 @media (max-width: 320px) {

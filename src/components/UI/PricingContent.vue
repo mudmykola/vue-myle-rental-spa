@@ -32,7 +32,12 @@ export default {
 @media (max-width: 600px) {}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .pricing-content{
+    max-width: 450px;
+
+  }
+}
 
 // 320
 @media (max-width: 320px) {

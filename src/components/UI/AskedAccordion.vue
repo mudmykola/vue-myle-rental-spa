@@ -5,7 +5,9 @@
         <div
             class="asked-content__accordion hover:shadow-border-ef-2 hover:transition duration-700 ease-in-out   cursor-pointer text-16 leading-18 font-font-b bg-c102 w-445 rounded-8 pt-4 pb-4 pl-4 pr-4 flex items-center justify-between"
             @click="toggle">
-          {{ item.title }}
+          {{
+            item.title
+          }}
           <svg-icon :class="{ 'is-rotated': isOpen }" type="mdi" :path="path"></svg-icon>
         </div>
         <div
@@ -14,7 +16,9 @@
             v-show="isOpen"
             @click.stop="toggleDesc"
         >
-          {{ item.desc }}
+          {{
+            item.desc
+          }}
         </div>
       </li>
     </ul>
@@ -62,6 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
+
 .asked-content {
   &__item {
     position: relative;
@@ -82,6 +87,7 @@ export default {
     }
   }
 }
+
 svg-icon {
   transition: transform 0.5s ease-in-out;
 }
@@ -93,26 +99,42 @@ svg-icon {
 
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .asked-accordion {
+    max-width: 480px;
+  }
+  .asked-content {
+    &__accordion {
+      max-width: 450px;
+    }
+
+    &__desc {
+      max-width: 450px;
+    }
+  }
+}
 
 // 320
 @media (max-width: 320px) {
-  .asked-accordion{
+  .asked-accordion {
     max-width: 290px;
   }
-.asked-content{
-  &__accordion{
-    max-width: 290px;
+  .asked-content {
+    &__accordion {
+      max-width: 290px;
+    }
+
+    &__desc {
+      max-width: 290px;
+    }
   }
-&__desc{
-  max-width: 290px;
-}
-}
 }
 </style>

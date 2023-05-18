@@ -165,7 +165,12 @@ export default {
 @media (max-width: 600px) {}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .burger-menu {
+    display: flex;
+    width: 100%;
+  }
+}
 
 // 320
 @media (max-width: 320px) {

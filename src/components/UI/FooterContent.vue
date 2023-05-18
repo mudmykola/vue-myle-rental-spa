@@ -2,27 +2,35 @@
   <div class="footer-box pt-28 flex justify-between ">
     <div class="footer-box__logo">
       <img class="pb-7" :src="logo.img" :alt="logo.alt">
-      <p class="font-font-r text-16 leading-18 pb-20 opacity-50 ">{{ logoDesc }}</p>
+      <p class="font-font-r text-16 leading-18 pb-20 opacity-50 ">{{
+          logoDesc
+        }}</p>
       <div class="footer-box__logo--parthner">
         <img :src="partner.img" :alt="partner.alt">
       </div>
     </div>
     <div class="footer-box__navigation flex ">
       <div class="footer-box__navigation--indastr pr-36">
-        <h2 class="text-16 leading-18 font-font-eb text-default pb-5">{{ footerIndustrTitle }}</h2>
+        <h2 class="text-16 leading-18 font-font-eb text-default pb-5">{{
+            footerIndustrTitle
+          }}</h2>
         <FooterNavLinkIndustr/>
       </div>
       <div class="footer-box__navigation--company">
-        <h2 class="text-16 leading-18 font-font-eb text-default pb-5">{{ footerCompanyTitle }}</h2>
+        <h2 class="text-16 leading-18 font-font-eb text-default pb-5">{{
+            footerCompanyTitle
+          }}</h2>
         <FooterNavLinkCompany/>
       </div>
     </div>
   </div>
   <div class="footer-copy flex items-center justify-between mt-10 pb-20">
-    <h2 class="text-16 leading-18 font-font-r opacity-50">{{ footerCopyTitle }}</h2>
+    <h2 class="text-16 leading-18 font-font-r opacity-50">{{
+        footerCopyTitle
+      }}</h2>
     <div class="footer-copy__social flex items-center ">
       <ul class="flex items-center gap-8">
-        <li  v-for="item in socialIcon" :key="item.id">
+        <li v-for="item in socialIcon" :key="item.id">
           <a :href="item.url">
             <img class="hover:opacity-50" :src="item.img" :alt="item-alt">
           </a>
@@ -109,12 +117,14 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
-.footer-copy{
-  ul{
-    li{
-      img{
+
+.footer-copy {
+  ul {
+    li {
+      img {
         @extend %dtrans;
-        &:hover{
+
+        &:hover {
           @extend %htrans;
         }
       }
@@ -124,34 +134,59 @@ export default {
 
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .footer-box {
+    padding-top: 1rem;
+    max-width: 450px;
+    flex-direction: column;
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__navigation {
+      max-width: 480px;
+
+
+    }
+  }
+  .footer-copy {
+    max-width: 450px;
+    padding-bottom: 30px;
+  }
+}
 
 // 320
 @media (max-width: 320px) {
- .footer-box{
-   padding-top: 1rem;
-   max-width: 290px;
-   flex-direction: column;
-   &__logo{
-     margin-bottom: 20px;
-   }
-   &__navigation{
-     max-width: 290px;
-     &--indastr{
-       padding-right: 6rem;
-     }
-   }
- }
-.footer-copy{
-  max-width: 290px;
-  padding-bottom: 30px;
-}
+  .footer-box {
+    padding-top: 1rem;
+    max-width: 290px;
+    flex-direction: column;
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__navigation {
+      max-width: 290px;
+
+      &--indastr {
+        padding-right: 6rem;
+      }
+    }
+  }
+  .footer-copy {
+    max-width: 290px;
+    padding-bottom: 30px;
+  }
 
 }
 </style>

@@ -49,7 +49,22 @@ export default {
 @media (max-width: 600px) {}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .pricing-box{
+    ul{
+      grid-template-columns: repeat(1,1fr);
+      gap:50px;
+      li{
+        width: 100%;
+      }
+    }
+    &__item{
+      img{
+        left: 13rem;
+      }
+    }
+  }
+}
 
 // 320
 @media (max-width: 320px) {
