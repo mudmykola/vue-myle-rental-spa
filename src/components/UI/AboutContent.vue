@@ -27,5 +27,5 @@ export default {
 </script>
 
 <style lang="scss">
-@use "src/styles/variables" as var;
+
 </style>

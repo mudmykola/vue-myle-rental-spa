@@ -97,7 +97,25 @@ export default {
       @extend %htrans;
     }
   }
+}
 
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+  .contacts-content{
+    &__text{
+      margin-top: 30px;
+    }
+  }
 
 }
 </style>

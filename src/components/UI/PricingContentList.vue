@@ -59,7 +59,6 @@ export default {
     gap:50px;
     li{
       width: 100%;
-
     }
   }
   &__item{
@@ -68,6 +67,5 @@ export default {
     }
   }
 }
-
 }
 </style>

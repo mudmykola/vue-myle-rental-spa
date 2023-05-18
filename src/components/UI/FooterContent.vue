@@ -121,4 +121,37 @@ export default {
     }
   }
 }
+
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+ .footer-box{
+   padding-top: 1rem;
+   max-width: 290px;
+   flex-direction: column;
+   &__logo{
+     margin-bottom: 20px;
+   }
+   &__navigation{
+     max-width: 290px;
+     &--indastr{
+       padding-right: 6rem;
+     }
+   }
+ }
+.footer-copy{
+  max-width: 290px;
+  padding-bottom: 30px;
+}
+
+}
 </style>

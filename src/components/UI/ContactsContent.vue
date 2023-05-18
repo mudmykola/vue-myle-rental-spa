@@ -1,5 +1,5 @@
 <template>
-    <div class="pb-32 flex justify-between">
+    <div class="contacts-content pb-32 flex justify-between">
         <ContactsContentImage :image="contactsImage" :icon="contactsImageMarker" />
         <ContactsContentText :title="contentsTitle" :subMail="contactsMailSub" :link="contactsMail"
             :phoneSub="contactsPhoneSub" :phoneNum="contactsPhoneNum" :phoneNumLink="contactsPhoneNumLink"
@@ -69,4 +69,24 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use "src/styles/variables" as var;
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+  .contacts-content{
+    flex-direction: column;
+
+  }
+
+}
+</style>

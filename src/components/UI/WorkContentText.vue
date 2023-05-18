@@ -44,7 +44,7 @@ export default {
             this.activeIndex = index;
         },
     },
-} 
+}
 </script>
 
 <style lang="scss" scoped>
@@ -58,5 +58,30 @@ export default {
         color: var.$default;
         @extend %htrans;
     }
+}
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+  .work-content{
+    &__text{
+      max-width: 300px;
+    }
+&__tab{
+  width: 290px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+  }
+
 }
 </style>

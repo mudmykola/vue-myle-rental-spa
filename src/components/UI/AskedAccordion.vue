@@ -1,5 +1,5 @@
 <template>
-  <div class=" m-auto">
+  <div class="asked-accordion m-auto">
     <ul>
       <li :class="{ active: isOpen }" class="asked-content__item  ">
         <div
@@ -89,5 +89,30 @@ svg-icon {
 .is-rotated {
   transform: rotate(180deg);
   transition: transform 0.3s ease-in-out;
+}
+
+// 768
+
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {
+  .asked-accordion{
+    max-width: 290px;
+  }
+.asked-content{
+  &__accordion{
+    max-width: 290px;
+  }
+&__desc{
+  max-width: 290px;
+}
+}
 }
 </style>
