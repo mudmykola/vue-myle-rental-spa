@@ -100,6 +100,18 @@ svg-icon {
 // 768
 
 @media (max-width: 768px) {
+  .asked-accordion {
+    max-width: 768px;
+  }
+  .asked-content {
+    &__accordion {
+      max-width: 740px;
+    }
+
+    &__desc {
+      max-width: 740px;
+    }
+  }
 }
 
 // 600

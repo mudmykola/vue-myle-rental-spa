@@ -19,6 +19,11 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .service-content {
+    &__boxing {
+      width: 740px;
+    }
+  }
 }
 
 // 600

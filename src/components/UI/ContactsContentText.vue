@@ -101,7 +101,18 @@ export default {
 
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .contacts-content{
+    width: 740px;
+
+    &__text{
+      width: 350px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding-left: 50px;
+    }
+  }
+}
 
 // 600
 @media (max-width: 600px) {

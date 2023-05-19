@@ -38,6 +38,9 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .promo {
+    width: 740px;
+  }
 }
 
 // 600

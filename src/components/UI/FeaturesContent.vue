@@ -2,19 +2,25 @@
   <div class="container-x">
     <div class="features-content__box text-default flex items-center justify-between">
       <div class="features-content__text w-w-470">
-        <h2 class="text-32 leading-36 font-font-eb pb-4">{{ title }}</h2>
-        <p class="text-16 leading-18 font-font-r opacity-50 pb-6">{{ desc }}</p>
+        <h2 class="text-32 leading-36 font-font-eb pb-4">{{
+            title
+          }}</h2>
+        <p class="text-16 leading-18 font-font-r opacity-50 pb-6">{{
+            desc
+          }}</p>
         <ul>
           <li class="text-16 leading-18 font-font-r opacity-50" v-for="item in GET_FEATURES_LIST" :key="item.id">
-            {{ item.text }}
+            {{
+              item.text
+            }}
           </li>
         </ul>
-        <Button class="mt-10" :text="btnText" :url="btnUrl" />
+        <Button class="mt-10" :text="btnText" :url="btnUrl"/>
       </div>
 
       <div class="features-content__image" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-offset="150"
-        data-aos-once="false" data-aos-mirror="true" data-aos-duration="1500" data-aos-anchor="services">
-        <img :src="featuresImg.img" :alt="featuresImg.alt" />
+           data-aos-once="false" data-aos-mirror="true" data-aos-duration="1500" data-aos-anchor="services">
+        <img :src="featuresImg.img" :alt="featuresImg.alt"/>
       </div>
     </div>
 
@@ -24,7 +30,7 @@
 
 <script>
 
-import { mapGetters } from "vuex";
+import {mapGetters} from "vuex";
 import Button from "./Button.vue";
 import FeaturesImage from "@/assets/image/features-img-car.webp";
 
@@ -73,7 +79,22 @@ export default {
 @use "src/styles/variables" as var;
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .features {
+    &-content {
+      &__box {
+        width: 740px;
+        flex-direction: column;
+      }
+      &__text{
+        max-width: 740px;
+      }
+      &__image{
+        margin-top: 50px;
+      }
+    }
+  }
+}
 
 // 600
 @media (max-width: 600px) {
@@ -83,10 +104,12 @@ export default {
         width: 570px;
         flex-direction: column;
       }
-      &__text{
+
+      &__text {
         max-width: 570px;
       }
-      &__image{
+
+      &__image {
         margin-top: 50px;
       }
     }
@@ -121,10 +144,12 @@ export default {
         width: 290px;
         flex-direction: column;
       }
-      &__text{
+
+      &__text {
         max-width: 290px;
       }
-      &__image{
+
+      &__image {
         margin-top: 50px;
       }
     }

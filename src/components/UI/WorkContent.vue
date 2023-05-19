@@ -43,7 +43,12 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .work-content {
+    max-width: 768px;
+    flex-direction: column;
+  }
 }
+
 
 // 600
 @media (max-width: 600px) {

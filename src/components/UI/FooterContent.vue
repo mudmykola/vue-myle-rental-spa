@@ -135,6 +135,24 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .footer-box {
+    padding-top: 1rem;
+    max-width: 740px;
+    flex-direction: column;
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__navigation {
+      max-width: 768px;
+      justify-content: space-between;
+    }
+  }
+  .footer-copy {
+    max-width: 740px;
+    padding-bottom: 30px;
+  }
 }
 
 // 600

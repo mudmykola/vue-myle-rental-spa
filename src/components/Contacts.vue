@@ -16,6 +16,9 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .contacts{
+    max-width: 768px;
+  }
 }
 
 // 600

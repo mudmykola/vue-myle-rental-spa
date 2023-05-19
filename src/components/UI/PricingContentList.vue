@@ -49,6 +49,21 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .pricing-box{
+    ul{
+      grid-template-columns: repeat(1,1fr);
+      gap:50px;
+      li{
+        width: 600px;
+        margin: 0 auto;
+      }
+    }
+    &__item{
+      img{
+        left: 47%;
+      }
+    }
+  }
 }
 
 // 600

@@ -21,6 +21,9 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .asked{
+    max-width: 768px;
+  }
 }
 
 // 600

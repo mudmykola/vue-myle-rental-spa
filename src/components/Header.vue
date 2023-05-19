@@ -93,6 +93,61 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .header {
+    height: 700px;
+
+    &-container {
+      width: 768px;
+
+    }
+
+    &-box {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &-content {
+      &__box {
+        margin-top: 32px;
+        flex-direction: column;
+      }
+
+      &__text {
+        width: 100%;
+      }
+
+      &__img {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+
+        &--map {
+          top: -23%;
+          img {
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+
+      }
+
+      &__link {
+        width: 100%;
+
+        margin-top: 24px;
+
+        a {
+
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 
 // 600
@@ -102,6 +157,7 @@ export default {
   }
   .header {
     height: 700px;
+
     &-container {
       width: 600px;
 
@@ -142,20 +198,25 @@ export default {
         margin-top: 100px;
         display: flex;
         justify-content: center;
-        &--map{
+
+        &--map {
           top: -23%;
-          img{
+
+          img {
             width: 70%;
             margin: 0 auto;
           }
         }
+
         //display: none;
       }
-      &__link{
+
+      &__link {
         width: 100%;
 
         margin-top: 24px;
-        a{
+
+        a {
 
           display: flex;
           justify-content: center;
@@ -172,9 +233,9 @@ export default {
   }
   .header {
     height: 415px;
-    &-container {
-     width: 480px;
 
+    &-container {
+      width: 480px;
     }
 
     &-box {
@@ -210,11 +271,13 @@ export default {
       &__img {
         display: none;
       }
-      &__link{
+
+      &__link {
         width: 100%;
 
         margin-top: 24px;
-        a{
+
+        a {
 
           display: flex;
           justify-content: center;
@@ -231,6 +294,7 @@ export default {
   }
   .header {
     height: 500px;
+
     &-container {
       width: 320px;
     }
@@ -268,16 +332,18 @@ export default {
       &__img {
         display: none;
       }
-  &__link{
-    width: 100%;
 
-    margin-top: 24px;
-    a{
+      &__link {
+        width: 100%;
 
-      display: flex;
-      justify-content: center;
-    }
-  }
+        margin-top: 24px;
+
+        a {
+
+          display: flex;
+          justify-content: center;
+        }
+      }
     }
   }
 }

@@ -72,6 +72,28 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .services-content{
+    justify-content: space-between;
+
+    &__text{
+      p{
+        width: 350px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    &__title{
+      width: 350px;
+      h2{
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+    }
+    &__image{
+      width: 350px;
+    }
+  }
 }
 
 // 600

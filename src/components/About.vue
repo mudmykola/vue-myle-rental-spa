@@ -31,6 +31,16 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  #about {
+    width: 768px;
+    margin: 80px 0;
+  }
+  .about {
+    width: 100%;
+    &-content {
+      width: 740px;
+    }
+  }
 }
 
 // 600

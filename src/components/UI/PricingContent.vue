@@ -29,6 +29,9 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .pricing-content {
+    max-width: 740px;
+  }
 }
 
 // 600

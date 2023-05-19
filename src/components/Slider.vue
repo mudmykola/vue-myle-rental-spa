@@ -52,6 +52,15 @@ export default {
 // 768
 
 @media (max-width: 768px) {
+  .slider{
+    width: 768px;
+    &-prev{
+      left: 10px;
+    }
+    &-next{
+      right: 10px;
+    }
+  }
 }
 
 // 600
