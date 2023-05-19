@@ -1,6 +1,6 @@
 <template>
   <div class="service-content__boxing ">
-    <ServicesContentText />
+    <ServicesContentText/>
   </div>
 </template>
 
@@ -18,10 +18,17 @@ export default {
 <style lang="scss">
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .service-content {
+    &__boxing {
+      width: 570px;
+    }
+  }
+}
 
 // 480
 @media (max-width: 480px) {

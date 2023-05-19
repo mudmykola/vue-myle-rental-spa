@@ -76,7 +76,22 @@ export default {
 @media (max-width: 768px) {}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .features {
+    &-content {
+      &__box {
+        width: 570px;
+        flex-direction: column;
+      }
+      &__text{
+        max-width: 570px;
+      }
+      &__image{
+        margin-top: 50px;
+      }
+    }
+  }
+}
 
 // 480
 @media (max-width: 480px) {
@@ -86,10 +101,12 @@ export default {
         width: 450px;
         flex-direction: column;
       }
-      &__text{
+
+      &__text {
         max-width: 450px;
       }
-      &__image{
+
+      &__image {
         margin-top: 50px;
       }
     }

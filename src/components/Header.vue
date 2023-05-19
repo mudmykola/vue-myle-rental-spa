@@ -97,6 +97,72 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+  .header {
+    height: 700px;
+    &-container {
+      width: 600px;
+
+    }
+
+    &-box {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &-content {
+      &__box {
+        margin-top: 32px;
+        flex-direction: column;
+      }
+
+      &__text {
+        width: 100%;
+
+        h3 {
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        h1 {
+          font-size: 24px;
+          line-height: 28px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      &__img {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        &--map{
+          top: -23%;
+          img{
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+        //display: none;
+      }
+      &__link{
+        width: 100%;
+
+        margin-top: 24px;
+        a{
+
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 
 // 480

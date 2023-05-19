@@ -1,18 +1,18 @@
 <template>
-    <div class="asked bg-c100 text-default">
-        <AskedContent class=" container-x" :title="askedTitle" />
-    </div>
+  <div class="asked bg-c100 text-default">
+    <AskedContent class=" container-x" :title="askedTitle"/>
+  </div>
 </template>
 <script>
 export default {
-    name: "TheAsked",
-    props: {
-        askedTitle: {
-            type: String,
-            requerid: true,
-            default: 'Frequently asked questions',
-        }
+  name: "TheAsked",
+  props: {
+    askedTitle: {
+      type: String,
+      requerid: true,
+      default: 'Frequently asked questions',
     }
+  }
 };
 </script>
 
@@ -20,21 +20,26 @@ export default {
 @use "src/styles/variables" as var;
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .asked{
+    max-width: 600px;
+  }
+}
 
 // 480
 @media (max-width: 480px) {
-  .asked{
+  .asked {
     max-width: 480px;
   }
 }
 
 // 320
 @media (max-width: 320px) {
-  .asked{
+  .asked {
     max-width: 320px;
   }
 

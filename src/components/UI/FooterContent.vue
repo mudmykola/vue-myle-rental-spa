@@ -139,6 +139,24 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+  .footer-box {
+    padding-top: 1rem;
+    max-width: 570px;
+    flex-direction: column;
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__navigation {
+      max-width: 600px;
+      justify-content: space-between;
+    }
+  }
+  .footer-copy {
+    max-width: 570px;
+    padding-bottom: 30px;
+  }
 }
 
 // 480
@@ -154,8 +172,6 @@ export default {
 
     &__navigation {
       max-width: 480px;
-
-
     }
   }
   .footer-copy {

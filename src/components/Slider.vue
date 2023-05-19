@@ -56,6 +56,15 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+  .slider{
+    width: 600px;
+    &-prev{
+      left: 10px;
+    }
+    &-next{
+      right: 10px;
+    }
+  }
 }
 
 // 480
@@ -69,7 +78,6 @@ export default {
       right: 10px;
     }
   }
-
 }
 
 // 320

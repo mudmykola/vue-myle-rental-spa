@@ -1,34 +1,45 @@
 <template>
   <div class="services-content__box flex items-center justify-between pt-20" v-for="item in GET_SERVICES_TITLE"
-    :key="item.id">
+       :key="item.id">
     <div class="services-content__text w-444">
       <div class="services-content__title flex items-center justify-between pb-5">
         <h2 class="text-32 leading-36 text-c100 font-font-eb">
-          {{ item.title }}
+          {{
+            item.title
+          }}
         </h2>
-        <img :src="require('/src/assets/image/' + item.icon)" :alt="item.altIcon" />
+        <img :src="require('/src/assets/image/' + item.icon)" :alt="item.altIcon"/>
       </div>
       <p class="text-16 leading-18 font-font-r opacity-50">
-        {{ item.text1 }}
+        {{
+          item.text1
+        }}
       </p>
       <p class="text-16 leading-18 font-font-r opacity-50">
-        {{ item.text2 }}
+        {{
+          item.text2
+        }}
       </p>
       <p class="text-16 leading-18 font-font-r opacity-50">
-        {{ item.text3 }}
+        {{
+          item.text3
+        }}
       </p>
       <p class="text-16 leading-18 font-font-r opacity-50">
-        {{ item.text4 }}
+        {{
+          item.text4
+        }}
       </p>
     </div>
     <div class="services-content__image">
-      <img class="hover:skew-y-3" :src="require('/src/assets/image/' + item.img)" :alt="item.altImg" />
+      <img class="hover:skew-y-3" :src="require('/src/assets/image/' + item.img)" :alt="item.altImg"/>
     </div>
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import {mapGetters} from "vuex";
+
 export default {
   name: "TheServicesContentText",
   computed: {
@@ -42,7 +53,7 @@ export default {
 
 .services-content {
   &__box {
-    p+p {
+    p + p {
       margin-top: 10px;
     }
   }
@@ -60,13 +71,11 @@ export default {
 
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 // 600
-@media (max-width: 600px) {}
-
-// 480
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .services-content{
     justify-content: space-between;
 
@@ -86,6 +95,35 @@ export default {
 
     }
     &__image{
+      width: 250px;
+    }
+  }
+}
+
+// 480
+@media (max-width: 480px) {
+  .services-content {
+    justify-content: space-between;
+
+    &__text {
+      p {
+        width: 250px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    &__title {
+      width: 250px;
+
+      h2 {
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+    }
+
+    &__image {
       width: 250px;
     }
   }

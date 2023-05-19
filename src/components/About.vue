@@ -35,6 +35,22 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+
+  #about {
+    width: 600px;
+    margin: 80px 0;
+  }
+  .about {
+    width: 100%;
+    &-content {
+      width: 570px;
+
+      h2 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
 }
 
 // 480

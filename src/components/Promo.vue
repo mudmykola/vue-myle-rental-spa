@@ -37,23 +37,28 @@ export default {
 @use "src/styles/variables" as var;
 // 768
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .promo {
+    width: 570px;
+  }
+}
 
 // 480
 @media (max-width: 480px) {
-  .promo{
+  .promo {
     width: 450px;
   }
 }
 
 // 320
 @media (max-width: 320px) {
-.promo{
-  width: 290px;
-}
+  .promo {
+    width: 290px;
+  }
 
 }
 </style>

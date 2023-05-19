@@ -76,10 +76,20 @@ export default {
 @media (max-width: 768px) {}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .contacts-content{
+    flex-direction: column;
+
+  }
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .contacts-content{
+    flex-direction: column;
+
+  }
+}
 
 // 320
 @media (max-width: 320px) {

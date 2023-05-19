@@ -104,10 +104,26 @@ export default {
 @media (max-width: 768px) {}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .contacts-content{
+    width: 570px;
+
+    &__text{
+      width: 450px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .contacts-content{
+    &__text{
+      margin-top: 30px;
+    }
+  }
+}
 
 // 320
 @media (max-width: 320px) {

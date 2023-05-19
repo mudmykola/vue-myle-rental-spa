@@ -26,9 +26,7 @@ export default {
 
 // 320
 @media (max-width: 320px) {
-  .work{
 
-  }
 
 }
 

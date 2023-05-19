@@ -119,6 +119,28 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+  .slider-content{
+    &__title{
+      width: 570px;
+      text-align:center;
+      img{
+        margin: 0 auto;
+      }
+      h2{
+        font-size: 24px;
+        line-height: 28px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 18px;
+        width: 100%;
+      }
+    }
+    .swiper-slide{
+      width: 570px;
+    }
+  }
+
 }
 
 // 480

@@ -64,7 +64,11 @@ export default {
 @media (max-width: 768px) {}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .footer{
+    max-width: 600px;
+  }
+}
 
 // 480
 @media (max-width: 480px) {

@@ -33,7 +33,19 @@ export default {
 @media (max-width: 768px) {}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .asked-content{
+    max-width: 600px;
+    h2{
+      font-size: 30px;
+      line-height: 36px;
+    }
+    &__list{
+      grid-template-columns: repeat(1,1fr);
+      max-width: 570px;
+    }
+  }
+}
 
 // 480
 @media (max-width: 480px) {

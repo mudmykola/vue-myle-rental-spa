@@ -24,6 +24,9 @@ export default {
 
 // 600
 @media (max-width: 600px) {
+  .container-x{
+    width: 600px;
+  }
 }
 
 // 480
